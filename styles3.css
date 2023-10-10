@@ -1,0 +1,40 @@
+h3{
+    color: black;
+}
+h1.halaman1_4{
+    text-align: center;
+    color: rgb(30, 0, 255);
+}
+h2.halaman2_4{
+    text-align: lefgt;
+    color: black;
+}
+h3.halaman3_4{
+    font-style: italic;
+}
+h1.heading1_5 {
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+h2.heading2_5 {
+    text-align: center;
+    color: rgb(251, 0, 197);
+    text-transform: initial;
+}
+h3.heading3_5 {
+    text-align: center;
+    color: purple;
+    text-decoration: line-through;
+}
+p.paragraph1_5 {
+    text-align:justify;
+    color: black;
+    letter-spacing: normal;
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wp10236650.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+}
