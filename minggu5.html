@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latihan WEB</title>
+    </head>
+
+    <body>
+        <h1>Belajar Web</h1>
+        <p id="demo">Coba pencet tombolnya breee</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'HALOO CANTIK XIXIXIIXIIX'">SOKKIN!</button>
+        <hr>
+
+        <h1>Javascript Can Change Images</h1>
+        <img id="myImage" onclick="changeImage()" src="https://nuscimagazine.com/wp-content/uploads/2022/09/Image_20220929_033449_039-1000x726.jpeg" width="300" height="180">
+        <p>Click the image to change image.</p>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage')
+                if (image.src.match("bulbon")) {
+                    image.src = "https://nuscimagazine.com/wp-content/uploads/2022/09/Image_20220929_033449_039-1000x726.jpeg";
+                } else {
+                    image.src = "https://thumbs.dreamstime.com/b/funny-crazy-cat-evil-white-open-mouth-61209625.jpg"
+                }
+                } 
+        </script>
+        <hr>
+
+        <h1>Masi Java Sricpt</h1>
+        <p id="test">Java Sricpt can change the style of an HTML element.</p>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("test")
+                x.style.fontSize = "25px";
+                x.style.color = "green";
+            }
+        </script>
+        <button type="button" onclick="myFunction()">Teken bro</button>
+        <hr>
+
+        <body>
+            <h1>Javascript Can Validate Input</h1>
+            <p>Please input a number between 1 and 10</p>
+            <input id="numb" type="number">
+            <button type="button" onclick="fungsi1 ()">Submit</button>
+            <p id="validasi"></p>
+            <script>
+                function fungsi1 () {
+                    var x, text;
+                    x = document.getElementById("numb").value;
+                    if (isNaN(x) || x < 1 || x > 10){
+                        text = "Input not valid";
+                    } else {
+                        text = "Input OK";
+                    }
+                    document.getElementById("validasi").innerHTML = text;
+                    } 
+            </script>
+
+    </body>
+
+    </html>
